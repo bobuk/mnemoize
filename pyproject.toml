@@ -1,0 +1,18 @@
+[tool.poetry]
+name = "mnemoize"
+version = "0.1.0"
+description = "Use mnemonic code instead of bytes or passwords."
+authors = ["Grigory Bakunov <thebobuk@ya.ru>"]
+license = "The Unlicense"
+
+include = ["bip-0039/*.txt"]
+
+[tool.poetry.dependencies]
+python = "^3.8"
+
+[tool.poetry.dev-dependencies]
+pytest = "^5.4.3"
+
+[build-system]
+requires = ["poetry>=0.12"]
+build-backend = "poetry.masonry.api"
