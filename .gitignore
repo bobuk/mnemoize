@@ -129,3 +129,4 @@ dmypy.json
 .pyre/
 
 # Poetry lock file (no need in this simple case)
+poetry.lock
