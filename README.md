@@ -11,7 +11,7 @@ Usage of mnemoize is simple, there are only two public methods:
 - `pack(int, language=english)` is used to convert int of any size to a list of words. These words are uniquely and definitely can be converted back to int with
 - `unpack(words, language=english)` which is used to reverse words (as one string) back to the corresponding number.
 
-The default value for language is 'english' but you can change it to any frim this list:
+The default value for language is 'english' but you can change it to any from this list:
 
 - chinese_simplified
 - chinese_traditional
