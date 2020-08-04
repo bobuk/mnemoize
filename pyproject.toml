@@ -5,7 +5,7 @@ description = "Use mnemonic code instead of bytes or passwords."
 authors = ["Grigory Bakunov <thebobuk@ya.ru>"]
 license = "The Unlicense"
 
-include = ["bip-0039/*.txt"]
+include = ["bip-0039/*.txt", "py.typed"]
 
 [tool.poetry.dependencies]
 python = "^3.8"

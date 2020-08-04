@@ -1,11 +1,12 @@
 #!/usr/bin/env python3
-import typing
+from __future__ import annotations
+from typing import List
 import os
 
 __langs__ = {}
 
 
-def get_words(lang: str = "english") -> list:
+def get_words(lang: str = "english") -> List:
     global __langs__
     p = os.path.join(os.path.dirname(__file__), "bip-0039", lang + ".txt")
     if lang not in __langs__:
