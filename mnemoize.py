@@ -8,8 +8,8 @@ __langs__ = {}
 
 def get_words(lang: str = "english") -> List:
     global __langs__
-    p = os.path.join(os.path.dirname(__file__), "bip-0039", lang + ".txt")
     if lang not in __langs__:
+        p = os.path.join(os.path.dirname(__file__), "bip-0039", lang + ".txt")
         if os.path.isfile(p):
             fulltext = [x.strip() for x in open(p, "r").readlines()]
             reverse = {}
