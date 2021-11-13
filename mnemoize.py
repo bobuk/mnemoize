@@ -23,7 +23,7 @@ def pack(num: int, lang: str = "english") -> str:
     words = get_words(lang)[0]
     wnum = num
     res = []
-    while wnum > 0:
+    while wnum > 0 or not res:
         res.append(words[wnum & 2047])
         wnum = wnum >> 10
     return " ".join(res)
